@@ -7,6 +7,17 @@ var app = new Vue({
         message: "Buon Weekend!",
         // BONUS: Aggiungere un’immagine presa anch’essa da un data
         img_url: "https://borsaefinanza.it/wp-content/uploads/2020/02/space-economy-563x353.jpg",
+        
+    },
+
+    methods: {
+        cambiaMessaggio: function (){
+            if(this.message == "Buon Weekend!"){
+                this.message = "Ciao!"
+            } else {
+                this.message = "Buon Weekend!"
+            };
+        }
     }
 
 });
